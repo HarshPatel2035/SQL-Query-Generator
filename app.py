@@ -4,8 +4,6 @@ import google.generativeai as genai
 GOOGLE_API_KEY = 'AIzaSyBoShzvepGFwmaB34-eGSBH3kdupx_IW2M'
 genai.configure(api_key=GOOGLE_API_KEY)
 
-for model in genai.list_models():
-    print(model.name)
 model = genai.GenerativeModel("gemini-2.5-pro")
 def main():
     st.set_page_config(page_title="Sql Query Generator 🤖",page_icon=':robot:')
