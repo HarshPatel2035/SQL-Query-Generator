@@ -1,0 +1,2 @@
+[server]
+preInstall = "pip install --upgrade pip"
